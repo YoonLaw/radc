@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>INFORMATION FOR WALMART SUPPLY CHAIN EMPLOYEES</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/bootstrap-theme.css" media="screen" />
+  <!--<link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">-->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen" />
+  <script type="text/javascript" src="bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.10.1/validator.min.js"></script>
+</head>
+
+<body>
+  <section class="page-header">
+    <h1 class="project-name">INFORMATION FOR WALMART SUPPLY CHAIN EMPLOYEES</h1>
+  </section>
+
+  <section class="main-content">
+    <p>
+      Did you receive a mailer recently (around mid-June) about a lawsuit Flores v. Walmart?
+    </p>
+
+    <p>
+      Walmart settled lawsuits with Manuel Flores and others to settle all labor law claims any of its California
+      warehouse workers might have – specifically YOU.<sup><a href="#f1">1</a></sup>
+    </p>
+
+    <p>
+      We are not those lawyers. We are the lawyers who went to trial against Walmart in April 2019 and WON! We got a
+      verdict for over $6 million for 4,840 workers. Walmart still is trying to avoid paying, but we’ve already won on
+      appeal and Walmart will have to pay <em>at least</em> the $6 million. We are still fighting hard for more!
+    </p>
+
+    <p>
+      We represent the class in Hamilton, Hernnadez v. Wal-Mart Stores, Inc., Wal-Mart Associates, Inc., Case No.
+      5:17-cv-01415 AB (KKx). As you might know, we went to trial in April 2019 and won $6 million for all the workers
+      at the facility at 6750 Kimball Avenue from when it opened until August 21, 2018.<sup><a href="#f2">2</a></sup>
+      The jury gave about 90% what we
+      wanted for meals, which means for everyone that worked there during that time, they get 90% of their hourly pay
+      for every shift over 6 hours. Someone who was paid $15 an hour is entitled to get $13.50 for almost every day they
+      worked (minus attorneys’ fees and costs)
+    </p>
+
+    <p>
+      You haven’t been paid in Hamilton v. Walmart because Walmart is still fighting and we are still fighting for more
+      than $6 million. Walmart has told us they have the right to settle with Flores in order to avoid paying Hamilton
+      and the workers at 6750 Kimball Avenue. We think you should know about this.
+    </p>
+
+    <p>
+      In Flores, people get about $11.28 a week for all your wage and hour claims. That’s compared to the Hamilton
+      verdict, which was about that per shift for just the meal breaks.
+    </p>
+
+    <p>We have already filed papers with the court in Flores and expressed these issues. If you’d like to add your
+      voice, you have two options.</p>
+
+    <h3>WHAT CAN YOU DO?</h3>
+
+    <p>You basically have two options. You can opt-out of the Flores settlement, keep your rights to sue Walmart for
+      more money. Or you can object (complain) about the Flores settlement and ask the judge to reject it and get your
+      share (about $11.28 a week, the actual amount is in your Flores notice). We have prepared an automated form for
+      you to fill out and we will send it in for you.<sup><a href="#f3">3</a></sup></p>
+
+    <p>
+      You can choose one of the two options, not both. People who are part of the settlement can complain about it,
+      people who choose to opt out cannot.
+    </p>
+
+    <div class="form-check">
+      <input class="form-check-input" onchange="onOptInSelect()" type="radio" name="optin" id="opt-out">
+      <label class="form-check-label" for="opt-out">I WANT TO OPT OUT, TO KEEP MY RIGHT TO SUE FOR MORE:</label>
+    </div>
+
+    <div class="form-check mb-3">
+      <input class="form-check-input" onchange="onOptInSelect()" type="radio" name="optin" id="opt-in">
+      <label class="form-check-label" for="opt-in">I WANT TO OBJECT/COMPLAIN ABOUT THE LAWSUIT:</label>
+    </div>
+
+    <form id="opt-out-form" class="needs-validation mb-3" style="display: none" novalidate method="get"
+      action="https://na2.docusign.net/Member/PowerFormSigning.aspx">
+      <input type="hidden" name="PowerFormId" value="741a09fb-ecf4-4143-a9f6-cc423c065158" />
+
+      <p>If you want to opt-out, please fill out this form and this website will then automatically generate a document
+        for you to sign. Opting out just preserves your right to sue for more, there is no guarantee of a result.</p>
+
+      <div class="mb-3">
+        <label for="full-name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="full-name" required="required" name="ClassMember_UserName"
+          placeholder="Enter your full name">
+        <div class="invalid-feedback">
+          Full name is required
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address1" class="form-label">Address Line 1</label>
+        <input type="text" class="form-control" placeholder="Street address or P.O. Box" id="address1"
+          required="required" name="ClassMember_Address1">
+        <div class="invalid-feedback">
+          Address is required
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address2" class="form-label">Address Line 2</label>
+        <input type="text" class="form-control" placeholder="Apt, suite, unit, building, floor, etc" id="address2"
+          name="ClassMember_Address2">
+      </div>
+
+      <div class="row g-3 mb-3">
+        <div class="input-group col-auto">
+          <span class="input-group-text" id="city">City</span>
+          <input type="text" class="form-control" name="ClassMember_City" aria-label="City" aria-describedby="city"
+            required="required">
+        </div>
+
+        <div class="input-group col-auto">
+          <span class="input-group-text" id="state">State</span>
+          <select class="form-control" name="ClassMember_State" required="required">
+            <option disabled selected value>-- select a state --</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
+
+        <div class="input-group col-auto">
+          <span class="input-group-text" id="zip">Zip</span>
+          <input type="text" class="form-control" name="ClassMember_Zip" aria-label="Zipcode" aria-describedby="zip"
+            required="required">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="telephone" class="form-label">Telephone</label>
+        <input type="tel" placeholder="123-456-7890" required="required"
+          pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$" class="form-control" id="telephone"
+          name="ClassMember_Telephone">
+      </div>
+
+      <div class="mb-3">I worked at Walmart from approximately:</div>
+
+      <div class="input-group col-auto mb-3">
+        <span class="input-group-text" id="start_year">Year</span>
+        <select class="form-control" name="ClassMember_StartYear" required="required">
+          <option disabled selected value>--- select ---</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
+        <span class="input-group-text" id="start_month">Month</span>
+        <select class="form-control" name="ClassMember_StartMonth">
+          <option selected value>--- unsure ---</option>
+          <option value="Jan">January</option>
+          <option value="Feb">February</option>
+          <option value="Mar">March</option>
+          <option value="Apr">April</option>
+          <option value="May">May</option>
+          <option value="Jun">June</option>
+          <option value="Jul">July</option>
+          <option value="Aug">August</option>
+          <option value="Sep">September</option>
+          <option value="Oct">October</option>
+          <option value="Nov">November</option>
+          <option value="Dec">December</option>
+        </select>
+      </div>
+
+      <div class="mb-3">Until:</div>
+
+      <div class="input-group col-auto mb-3">
+        <span class="input-group-text" id="start_year">Year</span>
+        <select class="form-control" name="ClassMember_EndYear" required="required">
+          <option disabled selected value>--- select ---</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
+        <span class="input-group-text" id="start_month">Month</span>
+        <select class="form-control" name="ClassMember_EndMonth">
+          <option selected value>--- unsure ---</option>
+          <option value="Jan">January</option>
+          <option value="Feb">February</option>
+          <option value="Mar">March</option>
+          <option value="Apr">April</option>
+          <option value="May">May</option>
+          <option value="Jun">June</option>
+          <option value="Jul">July</option>
+          <option value="Aug">August</option>
+          <option value="Sep">September</option>
+          <option value="Oct">October</option>
+          <option value="Nov">November</option>
+          <option value="Dec">December</option>
+        </select>
+      </div>
+
+      <div class="mb-3">
+        <label for="ssn" class="form-label">Last four of Social Security Number:</label>
+        <input type="text" inputmode="numeric" placeholder="1234" required="required"
+          pattern="^[0-9]{4}$" class="form-control" id="ssn"
+          name="ClassMember_SSN">
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        Submit and Sign
+      </button>
+    </form>
+
+    <form id="opt-in-form" class="needs-validation mb-3" style="display: none" novalidate method="get"
+      action="https://na2.docusign.net/Member/PowerFormSigning.aspx">
+      <input type="hidden" name="PowerFormId" value="741a09fb-ecf4-4143-a9f6-cc423c065158" />
+
+      <p>If you want to complain, please fill out this form and this website will then automatically generate a document
+        for you to sign. Objecting is a complaint to the judge about the settlement. You will still get your Individual
+        Class Payment (about $11.28 per workweek you worked).</p>
+
+      <p class="mb-3"><strong>I object to the Flores settlement for the following reason(s):</strong></p>
+
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="r1" name="ClassMember_Reason_1">
+        <label class="form-check-label" for="r1">Settlement is too low. Hamilton and Hernandez already went to trial and
+          a jury found Walmart’s policies were unlawful. I was part of that case and I continued to suffer the same harm
+          for the time after Hamilton was suing for. I should be getting more because a jury already found Walmart’s
+          meal policies were unlawful and Walmart didn’t change those policies even after they lost. Plus, Walmart
+          forced me to go through security checks without paying me for that time, which was unlawful, and the law is
+          clear that unpaid security checks are illegal.</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="r2" name="ClassMember_Reason_2">
+        <label class="form-check-label" for="r2">The settlement is too broad. The settlement settles all Walmart’s labor
+          law violations, including forcing us to “voluntary time off” (end our shift early) even though we don’t want
+          to, not giving us 10 minute rest breaks because the break rooms are too far away, plus other violations.
+          Flores did not get fair value for these violations.</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="r3" name="ClassMember_Reason_3">
+        <label class="form-check-label" for="r3">Flores has a conflict of interest. He is settling for all the workers,
+          but we are not all the same. Security checks vary between some facilities (some facilities security check is
+          easier than my facility). Walmart has placed a time clock after security recently. I am different because I am
+          part of the Hamilton class and we already won that Walmart broke the law, so our claim is strong than others
+          for the time after the Hamilton trial. Former employees also have the right to substantial penalties that
+          current employees are not, but Flores treats all employees the same. That is because of the conflict of
+          interest.</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="r4" name="ClassMember_Reason_4">
+        <label class="form-check-label" for="r4">Flores didn’t fight hard. They settled this case without fighting. My
+          class counsel in Hamilton v. Walmart went to trial. Walmart is settling with Flores because he isn’t fighting
+          hard. He has spent little money on this case. I hasn’t explained all the good claims Walmart workers have,
+          which I think is suspicious.</label>
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="r_custom" name="ClassMember_Reason_custom">
+        <label class="form-check-label" for="r_custom">I have the additional reason(s):</label>
+        <textarea class="form-control" rows="4" name="ClassMember_Reason_7_Text"></textarea>
+      </div>
+
+      <div class="mb-3">
+        <label for="full-name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="full-name" required="required" name="ClassMember_UserName"
+          placeholder="Enter your full name">
+        <div class="invalid-feedback">
+          Full name is required
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address1" class="form-label">Address Line 1</label>
+        <input type="text" class="form-control" placeholder="Street address or P.O. Box" id="address1"
+          required="required" name="ClassMember_Address1">
+        <div class="invalid-feedback">
+          Address is required
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="address2" class="form-label">Address Line 2</label>
+        <input type="text" class="form-control" placeholder="Apt, suite, unit, building, floor, etc" id="address2"
+          name="ClassMember_Address2">
+      </div>
+
+      <div class="row g-3 mb-3">
+        <div class="input-group col-auto">
+          <span class="input-group-text" id="city">City</span>
+          <input type="text" class="form-control" name="ClassMember_City" aria-label="City" aria-describedby="city"
+            required="required">
+        </div>
+
+        <div class="input-group col-auto">
+          <span class="input-group-text" id="state">State</span>
+          <select class="form-control" name="ClassMember_State" required="required">
+            <option disabled selected value>-- select a state --</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+          </select>
+        </div>
+
+        <div class="input-group col-auto">
+          <span class="input-group-text" id="zip">Zip</span>
+          <input type="text" class="form-control" name="ClassMember_Zip" aria-label="Zipcode" aria-describedby="zip"
+            required="required">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="telephone" class="form-label">Telephone</label>
+        <input type="tel" placeholder="123-456-7890" required="required"
+          pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$" class="form-control" id="telephone"
+          name="ClassMember_Telephone">
+      </div>
+
+      <div class="mb-3">I worked at Walmart from approximately:</div>
+
+      <div class="input-group col-auto mb-3">
+        <span class="input-group-text" id="start_year">Year</span>
+        <select class="form-control" name="ClassMember_StartYear">
+          <option disabled selected value>Select</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
+        <span class="input-group-text" id="start_month">Month</span>
+        <select class="form-control" name="ClassMember_StartMonth">
+          <option selected value>Don't remember</option>
+          <option value="Jan">January</option>
+          <option value="Feb">February</option>
+          <option value="Mar">March</option>
+          <option value="Apr">April</option>
+          <option value="May">May</option>
+          <option value="Jun">June</option>
+          <option value="Jul">July</option>
+          <option value="Aug">August</option>
+          <option value="Sep">September</option>
+          <option value="Oct">October</option>
+          <option value="Nov">November</option>
+          <option value="Dec">December</option>
+        </select>
+      </div>
+
+      <div class="mb-3">Until:</div>
+
+      <div class="input-group col-auto mb-3">
+        <span class="input-group-text" id="start_year">Year</span>
+        <select class="form-control" name="ClassMember_EndYear">
+          <option disabled selected value>Select</option>
+          <option value="2015">2015</option>
+          <option value="2016">2016</option>
+          <option value="2017">2017</option>
+          <option value="2018">2018</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+        </select>
+        <span class="input-group-text" id="start_month">Month</span>
+        <select class="form-control" name="ClassMember_EndMonth">
+          <option selected value>Don't remember</option>
+          <option value="Jan">January</option>
+          <option value="Feb">February</option>
+          <option value="Mar">March</option>
+          <option value="Apr">April</option>
+          <option value="May">May</option>
+          <option value="Jun">June</option>
+          <option value="Jul">July</option>
+          <option value="Aug">August</option>
+          <option value="Sep">September</option>
+          <option value="Oct">October</option>
+          <option value="Nov">November</option>
+          <option value="Dec">December</option>
+        </select>
+      </div>
+
+      <button type="submit" class="btn btn-primary">
+        Submit and Sign
+      </button>
+    </form>
+
+    <p>
+      If you have any questions, you can call or text the Hamilton class action trial lawyers at (213) 612-0988 or email
+      <a href="mailto:jrosales@yoonlaw.com">jrosales@yoonlaw.com</a>. The deadline for Flores is July 20. Do not wait
+      until the last minute.
+    </p>
+
+    <footer class="site-footer">
+      <p id="f1">1. The cases are: Flores v. Walmart Inc., Case Nos. CIVDS2023061, CIVDS2014060, Waltz v. Wal-Mart
+        Associates, Inc., Case Nos. CIVSB2117018, CIVSB2133560. You should have received a copy of the notice. If not,
+        you can find it here. [mike link the document, it is flores notice.pdf]</p>
+      <p id="f2">2. Even though we went to trial in April 2019, the time we could sue for was cut off after August 2018.
+      </p>
+      <p id="f3">3. You can also challenge your workweek calculation in Flores, but our automated form is not designed
+        for that, so you will have to do that on your own. The notice explains how.</p>
+
+
+      <!-- <div class="pull-left">
+        Ph: 213-612-0988 | Fax: 213-947-1211
+      </div>
+      <div class="pull-right">
+        <a href="mailto:kyoon@yoonlaw.com">kyoon@yoonlaw.com</a> |
+        <a href="http://www.yoonlaw.com" target="_blank">www.yoonlaw.com</a>
+      </div> -->
+    </footer>
+  </section>
+</body>
+<script>
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  });
+
+  const optInRadios = document.getElementsByName('optin');
+  function onOptInSelect() {
+    document.getElementById('opt-in-form').style.display = 'none';
+    document.getElementById('opt-out-form').style.display = 'none';
+    if (optInRadios[1].checked) {
+      document.getElementById('opt-in-form').style.display = 'block';
+    } else if (optInRadios[0].checked) {
+      document.getElementById('opt-out-form').style.display = 'block';
+    }
+  }
+
+  onOptInSelect();
+</script>
+
+</html>
