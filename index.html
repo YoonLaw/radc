@@ -85,15 +85,15 @@
     </div>
 
     <form id="opt-out-form" class="needs-validation mb-3" style="display: none" novalidate method="get"
-      action="https://na2.docusign.net/Member/PowerFormSigning.aspx">
-      <input type="hidden" name="PowerFormId" value="741a09fb-ecf4-4143-a9f6-cc423c065158" />
+      action="https://eu.docusign.net/Member/PowerFormSigning.aspx">
+      <input type="hidden" name="PowerFormId" value="2ddaa290-0759-4503-a14b-8d4e25109245" />
 
       <p>If you want to opt-out, please fill out this form and this website will then automatically generate a document
         for you to sign. Opting out just preserves your right to sue for more, there is no guarantee of a result.</p>
 
       <div class="mb-3">
         <label for="full-name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="full-name" required="required" name="ClassMember_UserName"
+        <input type="text" class="form-control" id="full-name" required="required" name="full_name"
           placeholder="Enter your full name">
         <div class="invalid-feedback">
           Full name is required
@@ -101,9 +101,9 @@
       </div>
 
       <div class="mb-3">
-        <label for="address1" class="form-label">Address Line 1</label>
-        <input type="text" class="form-control" placeholder="Street address or P.O. Box" id="address1"
-          required="required" name="ClassMember_Address1">
+        <label for="address_1" class="form-label">Address Line 1</label>
+        <input type="text" class="form-control" placeholder="Street address or P.O. Box" id="address_1"
+          required="required" name="address_1">
         <div class="invalid-feedback">
           Address is required
         </div>
@@ -111,20 +111,20 @@
 
       <div class="mb-3">
         <label for="address2" class="form-label">Address Line 2</label>
-        <input type="text" class="form-control" placeholder="Apt, suite, unit, building, floor, etc" id="address2"
-          name="ClassMember_Address2">
+        <input type="text" class="form-control" placeholder="Apt, suite, unit, building, floor, etc" id="address_2"
+          name="address_2">
       </div>
 
       <div class="row g-3 mb-3">
         <div class="input-group col-auto">
           <span class="input-group-text" id="city">City</span>
-          <input type="text" class="form-control" name="ClassMember_City" aria-label="City" aria-describedby="city"
+          <input type="text" class="form-control" name="city" aria-label="City" aria-describedby="city"
             required="required">
         </div>
 
         <div class="input-group col-auto">
           <span class="input-group-text" id="state">State</span>
-          <select class="form-control" name="ClassMember_State" required="required">
+          <select class="form-control" name="state" required="required">
             <option disabled selected value>-- select a state --</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -181,8 +181,8 @@
         </div>
 
         <div class="input-group col-auto">
-          <span class="input-group-text" id="zip">Zip</span>
-          <input type="text" class="form-control" name="ClassMember_Zip" aria-label="Zipcode" aria-describedby="zip"
+          <span class="input-group-text">Zip</span>
+          <input type="text" class="form-control" name="zipcode" aria-label="Zipcode" aria-describedby="zip"
             required="required">
         </div>
       </div>
@@ -191,14 +191,14 @@
         <label for="telephone" class="form-label">Telephone</label>
         <input type="tel" placeholder="123-456-7890" required="required"
           pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$" class="form-control" id="telephone"
-          name="ClassMember_Telephone">
+          name="telephone">
       </div>
 
       <div class="mb-3">I worked at Walmart from approximately:</div>
 
       <div class="input-group col-auto mb-3">
         <span class="input-group-text" id="start_year">Year</span>
-        <select class="form-control" name="ClassMember_StartYear" required="required">
+        <select class="form-control" name="start_year" required="required">
           <option disabled selected value>--- select ---</option>
           <option value="2015">2015</option>
           <option value="2016">2016</option>
@@ -211,7 +211,7 @@
           <option value="2023">2023</option>
         </select>
         <span class="input-group-text" id="start_month">Month</span>
-        <select class="form-control" name="ClassMember_StartMonth">
+        <select class="form-control" name="start_month">
           <option selected value>--- unsure ---</option>
           <option value="Jan">January</option>
           <option value="Feb">February</option>
@@ -232,7 +232,7 @@
 
       <div class="input-group col-auto mb-3">
         <span class="input-group-text" id="start_year">Year</span>
-        <select class="form-control" name="ClassMember_EndYear" required="required">
+        <select class="form-control" name="end_year" required="required">
           <option disabled selected value>--- select ---</option>
           <option value="2015">2015</option>
           <option value="2016">2016</option>
@@ -245,7 +245,7 @@
           <option value="2023">2023</option>
         </select>
         <span class="input-group-text" id="start_month">Month</span>
-        <select class="form-control" name="ClassMember_EndMonth">
+        <select class="form-control" name="end_month">
           <option selected value>--- unsure ---</option>
           <option value="Jan">January</option>
           <option value="Feb">February</option>
@@ -266,7 +266,7 @@
         <label for="ssn" class="form-label">Last four of Social Security Number:</label>
         <input type="text" inputmode="numeric" placeholder="1234" required="required"
           pattern="^[0-9]{4}$" class="form-control" id="ssn"
-          name="ClassMember_SSN">
+          name="ssn">
       </div>
 
       <button type="submit" class="btn btn-primary">
@@ -275,8 +275,8 @@
     </form>
 
     <form id="opt-in-form" class="needs-validation mb-3" style="display: none" novalidate method="get"
-      action="https://na2.docusign.net/Member/PowerFormSigning.aspx">
-      <input type="hidden" name="PowerFormId" value="741a09fb-ecf4-4143-a9f6-cc423c065158" />
+      action="https://eu.docusign.net/Member/PowerFormSigning.aspx">
+      <input type="hidden" name="PowerFormId" value="d25238b8-d0cc-4254-aa08-a3e1a31954f0" />
 
       <p>If you want to complain, please fill out this form and this website will then automatically generate a document
         for you to sign. Objecting is a complaint to the judge about the settlement. You will still get your Individual
@@ -285,7 +285,7 @@
       <p class="mb-3"><strong>I object to the Flores settlement for the following reason(s):</strong></p>
 
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r1" name="ClassMember_Reason_1">
+        <input type="checkbox" class="form-check-input" id="r1" name="r1" value="true">
         <label class="form-check-label" for="r1">Settlement is too low. Hamilton and Hernandez already went to trial and
           a jury found Walmart’s policies were unlawful. I was part of that case and I continued to suffer the same harm
           for the time after Hamilton was suing for. I should be getting more because a jury already found Walmart’s
@@ -294,14 +294,14 @@
           clear that unpaid security checks are illegal.</label>
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r2" name="ClassMember_Reason_2">
+        <input type="checkbox" class="form-check-input" id="r2" name="r2" value="true">
         <label class="form-check-label" for="r2">The settlement is too broad. The settlement settles all Walmart’s labor
           law violations, including forcing us to “voluntary time off” (end our shift early) even though we don’t want
           to, not giving us 10 minute rest breaks because the break rooms are too far away, plus other violations.
           Flores did not get fair value for these violations.</label>
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r3" name="ClassMember_Reason_3">
+        <input type="checkbox" class="form-check-input" id="r3" name="r3" value="true">
         <label class="form-check-label" for="r3">Flores has a conflict of interest. He is settling for all the workers,
           but we are not all the same. Security checks vary between some facilities (some facilities security check is
           easier than my facility). Walmart has placed a time clock after security recently. I am different because I am
@@ -311,21 +311,21 @@
           interest.</label>
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r4" name="ClassMember_Reason_4">
+        <input type="checkbox" class="form-check-input" id="r4" name="r4" value="true">
         <label class="form-check-label" for="r4">Flores didn’t fight hard. They settled this case without fighting. My
           class counsel in Hamilton v. Walmart went to trial. Walmart is settling with Flores because he isn’t fighting
           hard. He has spent little money on this case. I hasn’t explained all the good claims Walmart workers have,
           which I think is suspicious.</label>
       </div>
       <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r_custom" name="ClassMember_Reason_custom">
+        <input type="checkbox" class="form-check-input" id="r_custom" name="r5" value="true">
         <label class="form-check-label" for="r_custom">I have the additional reason(s):</label>
-        <textarea class="form-control" rows="4" name="ClassMember_Reason_7_Text"></textarea>
+        <textarea class="form-control" rows="4" name="additional_reason"></textarea>
       </div>
 
       <div class="mb-3">
         <label for="full-name" class="form-label">Name</label>
-        <input type="text" class="form-control" id="full-name" required="required" name="ClassMember_UserName"
+        <input type="text" class="form-control" id="full-name" required="required" name="full_name"
           placeholder="Enter your full name">
         <div class="invalid-feedback">
           Full name is required
@@ -335,7 +335,7 @@
       <div class="mb-3">
         <label for="address1" class="form-label">Address Line 1</label>
         <input type="text" class="form-control" placeholder="Street address or P.O. Box" id="address1"
-          required="required" name="ClassMember_Address1">
+          required="required" name="address_1">
         <div class="invalid-feedback">
           Address is required
         </div>
@@ -344,19 +344,19 @@
       <div class="mb-3">
         <label for="address2" class="form-label">Address Line 2</label>
         <input type="text" class="form-control" placeholder="Apt, suite, unit, building, floor, etc" id="address2"
-          name="ClassMember_Address2">
+          name="address_2">
       </div>
 
       <div class="row g-3 mb-3">
         <div class="input-group col-auto">
           <span class="input-group-text" id="city">City</span>
-          <input type="text" class="form-control" name="ClassMember_City" aria-label="City" aria-describedby="city"
+          <input type="text" class="form-control" name="city" aria-label="City" aria-describedby="city"
             required="required">
         </div>
 
         <div class="input-group col-auto">
           <span class="input-group-text" id="state">State</span>
-          <select class="form-control" name="ClassMember_State" required="required">
+          <select class="form-control" name="state" required="required">
             <option disabled selected value>-- select a state --</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
@@ -413,8 +413,8 @@
         </div>
 
         <div class="input-group col-auto">
-          <span class="input-group-text" id="zip">Zip</span>
-          <input type="text" class="form-control" name="ClassMember_Zip" aria-label="Zipcode" aria-describedby="zip"
+          <span class="input-group-text">Zip</span>
+          <input type="text" class="form-control" name="zipcode" aria-label="Zipcode" aria-describedby="zip"
             required="required">
         </div>
       </div>
@@ -423,14 +423,14 @@
         <label for="telephone" class="form-label">Telephone</label>
         <input type="tel" placeholder="123-456-7890" required="required"
           pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$" class="form-control" id="telephone"
-          name="ClassMember_Telephone">
+          name="telephone">
       </div>
 
       <div class="mb-3">I worked at Walmart from approximately:</div>
 
       <div class="input-group col-auto mb-3">
         <span class="input-group-text" id="start_year">Year</span>
-        <select class="form-control" name="ClassMember_StartYear">
+        <select class="form-control" name="start_year">
           <option disabled selected value>Select</option>
           <option value="2015">2015</option>
           <option value="2016">2016</option>
@@ -443,7 +443,7 @@
           <option value="2023">2023</option>
         </select>
         <span class="input-group-text" id="start_month">Month</span>
-        <select class="form-control" name="ClassMember_StartMonth">
+        <select class="form-control" name="start_month">
           <option selected value>Don't remember</option>
           <option value="Jan">January</option>
           <option value="Feb">February</option>
@@ -464,7 +464,7 @@
 
       <div class="input-group col-auto mb-3">
         <span class="input-group-text" id="start_year">Year</span>
-        <select class="form-control" name="ClassMember_EndYear">
+        <select class="form-control" name="end_year">
           <option disabled selected value>Select</option>
           <option value="2015">2015</option>
           <option value="2016">2016</option>
@@ -477,7 +477,7 @@
           <option value="2023">2023</option>
         </select>
         <span class="input-group-text" id="start_month">Month</span>
-        <select class="form-control" name="ClassMember_EndMonth">
+        <select class="form-control" name="end_month">
           <option selected value>Don't remember</option>
           <option value="Jan">January</option>
           <option value="Feb">February</option>
