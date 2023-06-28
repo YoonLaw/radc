@@ -91,20 +91,20 @@
       <p>If you want to opt-out, please fill out this form and this website will then automatically generate a document
         for you to sign. Opting out just preserves your right to sue for more, there is no guarantee of a result.</p>
 
-      <div class="mb-3">
+      <div class="mb-3 position-relative">
         <label for="full-name" class="form-label">Name</label>
         <input type="text" class="form-control" id="full-name" required="required" name="full_name"
           placeholder="Enter your full name">
-        <div class="invalid-feedback">
+        <div class="invalid-tooltip">
           Full name is required
         </div>
       </div>
 
-      <div class="mb-3">
+      <div class="mb-3 position-relative">
         <label for="address_1" class="form-label">Address Line 1</label>
         <input type="text" class="form-control" placeholder="Street address or P.O. Box" id="address_1"
           required="required" name="address_1">
-        <div class="invalid-feedback">
+        <div class="invalid-tooltip">
           Address is required
         </div>
       </div>
@@ -115,14 +115,17 @@
           name="address_2">
       </div>
 
-      <div class="row g-3 mb-3">
-        <div class="input-group col-auto">
+      <div class="row g-3 mb-3 position-relative">
+        <div class="input-group col">
           <span class="input-group-text" id="city">City</span>
           <input type="text" class="form-control" name="city" aria-label="City" aria-describedby="city"
             required="required">
+          <div class="invalid-tooltip">
+            City is required
+          </div>
         </div>
 
-        <div class="input-group col-auto">
+        <div class="input-group col">
           <span class="input-group-text" id="state">State</span>
           <select class="form-control" name="state" required="required">
             <option disabled selected value>-- select a state --</option>
@@ -180,23 +183,25 @@
           </select>
         </div>
 
-        <div class="input-group col-auto">
+        <div class="input-group col position-relative">
           <span class="input-group-text">Zip</span>
           <input type="text" class="form-control" name="zipcode" aria-label="Zipcode" aria-describedby="zip"
-            required="required">
+            required="required" pattern="[0-9]{5}(-[0-9]{4})?" />
+          <div class="invalid-tooltip">
+            Zipcode is missing or invalid
+          </div>
         </div>
       </div>
 
       <div class="mb-3">
         <label for="telephone" class="form-label">Telephone</label>
-        <input type="tel" placeholder="123-456-7890" required="required"
-          pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$" class="form-control" id="telephone"
-          name="telephone">
+        <input type="tel" placeholder="123-456-7890" required="required" pattern="^\d{3}-?\d{3}-?\d{4}$"
+          class="form-control" id="telephone" name="telephone" />
       </div>
 
       <div class="mb-3">I worked at Walmart from approximately:</div>
 
-      <div class="input-group col-auto mb-3">
+      <div class="input-group col mb-3">
         <span class="input-group-text" id="start_year">Year</span>
         <select class="form-control" name="start_year" required="required">
           <option disabled selected value>--- select ---</option>
@@ -230,8 +235,8 @@
 
       <div class="mb-3">Until:</div>
 
-      <div class="input-group col-auto mb-3">
-        <span class="input-group-text" id="start_year">Year</span>
+      <div class="input-group col mb-3">
+        <span class="input-group-text" id="end_year">Year</span>
         <select class="form-control" name="end_year" required="required">
           <option disabled selected value>--- select ---</option>
           <option value="2015">2015</option>
@@ -244,7 +249,7 @@
           <option value="2022">2022</option>
           <option value="2023">2023</option>
         </select>
-        <span class="input-group-text" id="start_month">Month</span>
+        <span class="input-group-text" id="end_month">Month</span>
         <select class="form-control" name="end_month">
           <option selected value>--- unsure ---</option>
           <option value="Jan">January</option>
@@ -264,9 +269,8 @@
 
       <div class="mb-3">
         <label for="ssn" class="form-label">Last four of Social Security Number:</label>
-        <input type="text" inputmode="numeric" placeholder="1234" required="required"
-          pattern="^[0-9]{4}$" class="form-control" id="ssn"
-          name="ssn">
+        <input type="text" inputmode="numeric" placeholder="1234" required="required" pattern="^[0-9]{4}$"
+          class="form-control" id="ssn" name="ssn">
       </div>
 
       <button type="submit" class="btn btn-primary">
@@ -282,61 +286,78 @@
         for you to sign. Objecting is a complaint to the judge about the settlement. You will still get your Individual
         Class Payment (about $11.28 per workweek you worked).</p>
 
-      <p class="mb-3"><strong>I object to the Flores settlement for the following reasons (check all that apply):</strong></p>
+      <p class="mb-3"><strong>I object to the Flores settlement for the following reasons (check all that
+          apply):</strong></p>
 
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r1" name="r1" value="true">
-        <label class="form-check-label" for="r1">Settlement is too low. Hamilton and Hernandez already went to trial and
-          a jury found Walmart’s policies were unlawful. I was part of that case and I continued to suffer the same harm
-          for the time after Hamilton was suing for. I should be getting more because a jury already found Walmart’s
-          meal policies were unlawful and Walmart didn’t change those policies even after they lost. Plus, Walmart
-          forced me to go through security checks without paying me for that time, which was unlawful, and the law is
-          clear that unpaid security checks are illegal.</label>
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r2" name="r2" value="true">
-        <label class="form-check-label" for="r2">The settlement is too broad. The settlement settles all Walmart’s labor
-          law violations, including forcing us to “voluntary time off” (end our shift early) even though we don’t want
-          to, not giving us 10 minute rest breaks because the break rooms are too far away, plus other violations.
-          Flores did not get fair value for these violations.</label>
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r3" name="r3" value="true">
-        <label class="form-check-label" for="r3">Flores has a conflict of interest. He is settling for all the workers,
-          but we are not all the same. Security checks vary between some facilities (some facilities security check is
-          easier than my facility). Walmart has placed a time clock after security recently. I am different because I am
-          part of the Hamilton class and we already won that Walmart broke the law, so our claim is strong than others
-          for the time after the Hamilton trial. Former employees also have the right to substantial penalties that
-          current employees are not, but Flores treats all employees the same. That is because of the conflict of
-          interest.</label>
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r4" name="r4" value="true">
-        <label class="form-check-label" for="r4">Flores didn’t fight hard. They settled this case without fighting. My
-          class counsel in Hamilton v. Walmart went to trial. Walmart is settling with Flores because he isn’t fighting
-          hard. He has spent little money on this case. I hasn’t explained all the good claims Walmart workers have,
-          which I think is suspicious.</label>
-      </div>
-      <div class="mb-3 form-check">
-        <input type="checkbox" class="form-check-input" id="r_custom" name="r5" value="true">
-        <label class="form-check-label" for="r_custom">I have the additional reason(s):</label>
-        <textarea class="form-control" rows="4" name="additional_reason"></textarea>
+      <div class="position-relative">
+        <div class="invalid-tooltip" id="reason_message">
+          At least one reason must be checked
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="r1" name="r1" value="true">
+          <label class="form-check-label" for="r1">Settlement is too low. Hamilton and Hernandez already went to trial
+            and
+            a jury found Walmart’s policies were unlawful. I was part of that case and I continued to suffer the same
+            harm
+            for the time after Hamilton was suing for. I should be getting more because a jury already found Walmart’s
+            meal policies were unlawful and Walmart didn’t change those policies even after they lost. Plus, Walmart
+            forced me to go through security checks without paying me for that time, which was unlawful, and the law is
+            clear that unpaid security checks are illegal.</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="r2" name="r2" value="true">
+          <label class="form-check-label" for="r2">The settlement is too broad. The settlement settles all Walmart’s
+            labor
+            law violations, including forcing us to “voluntary time off” (end our shift early) even though we don’t want
+            to, not giving us 10 minute rest breaks because the break rooms are too far away, plus other violations.
+            Flores did not get fair value for these violations.</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="r3" name="r3" value="true">
+          <label class="form-check-label" for="r3">Flores has a conflict of interest. He is settling for all the
+            workers,
+            but we are not all the same. Security checks vary between some facilities (some facilities security check is
+            easier than my facility). Walmart has placed a time clock after security recently. I am different because I
+            am
+            part of the Hamilton class and we already won that Walmart broke the law, so our claim is strong than others
+            for the time after the Hamilton trial. Former employees also have the right to substantial penalties that
+            current employees are not, but Flores treats all employees the same. That is because of the conflict of
+            interest.</label>
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="r4" name="r4" value="true">
+          <label class="form-check-label" for="r4">Flores didn’t fight hard. They settled this case without fighting. My
+            class counsel in Hamilton v. Walmart went to trial. Walmart is settling with Flores because he isn’t
+            fighting
+            hard. He has spent little money on this case. I hasn’t explained all the good claims Walmart workers have,
+            which I think is suspicious.</label>
+        </div>
+        <div class="mb-3 form-check position-relative">
+          <input type="checkbox" class="form-check-input" id="r_custom" name="r5" value="true"
+            onchange="onR5Changed(event)">
+          <label class="form-check-label" for="r_custom">I have the additional reason(s):</label>
+          <textarea class="form-control" rows="4" name="additional_reason" id="additional_reason" disabled="disabled"
+            required></textarea>
+          <div class="invalid-tooltip">
+            Additional reason is required
+          </div>
+        </div>
       </div>
 
-      <div class="mb-3">
+      <div class="mb-3 position-relative">
         <label for="full-name" class="form-label">Name</label>
         <input type="text" class="form-control" id="full-name" required="required" name="full_name"
           placeholder="Enter your full name">
-        <div class="invalid-feedback">
+        <div class="invalid-tooltip">
           Full name is required
         </div>
       </div>
 
-      <div class="mb-3">
+      <div class="mb-3 position-relative">
         <label for="address1" class="form-label">Address Line 1</label>
         <input type="text" class="form-control" placeholder="Street address or P.O. Box" id="address1"
           required="required" name="address_1">
-        <div class="invalid-feedback">
+        <div class="invalid-tooltip">
           Address is required
         </div>
       </div>
@@ -348,13 +369,16 @@
       </div>
 
       <div class="row g-3 mb-3">
-        <div class="input-group col-auto">
+        <div class="input-group col">
           <span class="input-group-text" id="city">City</span>
           <input type="text" class="form-control" name="city" aria-label="City" aria-describedby="city"
             required="required">
+          <div class="invalid-tooltip">
+            City is required
+          </div>
         </div>
 
-        <div class="input-group col-auto">
+        <div class="input-group col">
           <span class="input-group-text" id="state">State</span>
           <select class="form-control" name="state" required="required">
             <option disabled selected value>-- select a state --</option>
@@ -412,25 +436,30 @@
           </select>
         </div>
 
-        <div class="input-group col-auto">
+        <div class="input-group col position-relative">
           <span class="input-group-text">Zip</span>
           <input type="text" class="form-control" name="zipcode" aria-label="Zipcode" aria-describedby="zip"
-            required="required">
+            required="required" pattern="[0-9]{5}(-[0-9]{4})?" />
+          <div class="invalid-tooltip">
+            Zipcode is missing or invalid
+          </div>
         </div>
       </div>
 
-      <div class="mb-3">
+      <div class="mb-3 position-relative">
         <label for="telephone" class="form-label">Telephone</label>
-        <input type="tel" placeholder="123-456-7890" required="required"
-          pattern="^(\([0-9]{3}\) |[0-9]{3}-)[0-9]{3}-[0-9]{4}$" class="form-control" id="telephone"
-          name="telephone">
+        <input type="tel" placeholder="123-456-7890" required="required" pattern="^\d{3}-?\d{3}-?\d{4}$"
+          class="form-control" id="telephone" name="telephone">
+        <div class="invalid-tooltip">
+          Telephone is missing or invalid
+        </div>
       </div>
 
       <div class="mb-3">I worked at Walmart from approximately:</div>
 
-      <div class="input-group col-auto mb-3">
+      <div class="input-group col mb-3">
         <span class="input-group-text" id="start_year">Year</span>
-        <select class="form-control" name="start_year">
+        <select class="form-control" name="start_year" required>
           <option disabled selected value>Select</option>
           <option value="2015">2015</option>
           <option value="2016">2016</option>
@@ -462,9 +491,9 @@
 
       <div class="mb-3">Until:</div>
 
-      <div class="input-group col-auto mb-3">
-        <span class="input-group-text" id="start_year">Year</span>
-        <select class="form-control" name="end_year">
+      <div class="input-group col mb-3">
+        <span class="input-group-text" id="end_year">Year</span>
+        <select class="form-control" name="end_year" required>
           <option disabled selected value>Select</option>
           <option value="2015">2015</option>
           <option value="2016">2016</option>
@@ -476,7 +505,7 @@
           <option value="2022">2022</option>
           <option value="2023">2023</option>
         </select>
-        <span class="input-group-text" id="start_month">Month</span>
+        <span class="input-group-text" id="end_month">Month</span>
         <select class="form-control" name="end_month">
           <option selected value>--- unsure ---</option>
           <option value="Jan">January</option>
@@ -534,14 +563,34 @@
   // Loop over them and prevent submission
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
+      console.log(this);
       if (!form.checkValidity()) {
         event.preventDefault()
         event.stopPropagation()
       }
 
+      document.getElementById('reason_message').removeAttribute('style');
+      const checkboxes = form.querySelectorAll('.form-check-input');
+      if (checkboxes.length > 0) {
+        if (!Array.from(checkboxes).some((cb) => cb.checked)) {
+          document.getElementById('reason_message').style = 'display: block';
+        }
+      }
+
       form.classList.add('was-validated')
     }, false)
   });
+
+  /**
+   * @param {Event} ev
+   **/
+  function onR5Changed(ev) {
+    if (ev.target.checked) {
+      document.getElementById('additional_reason').removeAttribute('disabled');
+    } else {
+      document.getElementById('additional_reason').setAttribute('disabled', 'disabled');
+    }
+  }
 
   const optInRadios = document.getElementsByName('optin');
   function onOptInSelect() {
