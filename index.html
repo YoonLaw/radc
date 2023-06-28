@@ -597,10 +597,10 @@
    **/
   function onTelKeyup(ev) {
     ev.target.value = ev.target.value
-        .match(/\d*/g).join('')
-        .match(/(\d{0,3})(\d{0,3})(\d{0,4})/).slice(1).join('-')
-        .replace(/-*$/g, '')
-    ;
+      .match(/\d*/g).join('')
+      .match(/(\d{0,3})(\d{0,3})(\d{0,4})/).slice(1).join('-')
+      .replace(/-*$/g, '')
+      ;
   }
 
   const optInRadios = document.getElementsByName('optin');
