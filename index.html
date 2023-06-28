@@ -196,7 +196,7 @@
       <div class="mb-3">
         <label for="telephone" class="form-label">Telephone</label>
         <input type="tel" placeholder="123-456-7890" required="required" pattern="^\d{3}-?\d{3}-?\d{4}$"
-          class="form-control" id="telephone" name="telephone" />
+          class="form-control" id="telephone" name="telephone" onkeyup="onTelKeyup(event)" />
       </div>
 
       <div class="mb-3">I worked at Walmart from approximately:</div>
@@ -449,7 +449,7 @@
       <div class="mb-3 position-relative">
         <label for="telephone" class="form-label">Telephone</label>
         <input type="tel" placeholder="123-456-7890" required="required" pattern="^\d{3}-?\d{3}-?\d{4}$"
-          class="form-control" id="telephone" name="telephone">
+          class="form-control" id="telephone" name="telephone" onkeyup="onTelKeyup(event)">
         <div class="invalid-tooltip">
           Telephone is missing or invalid
         </div>
@@ -590,6 +590,17 @@
     } else {
       document.getElementById('additional_reason').setAttribute('disabled', 'disabled');
     }
+  }
+
+  /**
+   * @param {KeypressEvent} ev
+   **/
+  function onTelKeyup(ev) {
+    ev.target.value = ev.target.value
+        .match(/\d*/g).join('')
+        .match(/(\d{0,3})(\d{0,3})(\d{0,4})/).slice(1).join('-')
+        .replace(/-*$/g, '')
+    ;
   }
 
   const optInRadios = document.getElementsByName('optin');
