@@ -563,7 +563,6 @@
   // Loop over them and prevent submission
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
-      console.log(this);
       if (!form.checkValidity()) {
         event.preventDefault()
         event.stopPropagation()
@@ -574,6 +573,8 @@
       if (checkboxes.length > 0) {
         if (!Array.from(checkboxes).some((cb) => cb.checked)) {
           document.getElementById('reason_message').style = 'display: block';
+          event.preventDefault()
+          event.stopPropagation()
         }
       }
 
